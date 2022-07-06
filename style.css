@@ -1,0 +1,7 @@
+@charset "UTF-8";
+body {
+    background-color: #c5ebd6;
+}
+header{
+    background-image: linear-gradient(to top, rgb(56, 97, 55), rgb(88, 155, 87));
+}
