@@ -17,7 +17,7 @@
     --cor5: #063d1e;
 
     --fonte-padrao: Arial, Verdana, Helvetica, Sans-serif;
-    --fonte-destaque: 'Bebas Neue', cursive;
+    --fonte-destaque: 'Bebas Neue', 'cursive';
     --fonte-android: 'android', 'cursive';
 }
 
@@ -31,30 +31,57 @@
 body {
     background-color: var(--cor0);
     font-family: var(--fonte-padrao);
-
-
 }
+
+
 
 header {
     background-image: linear-gradient(to top, var(--cor5), var(--cor2));
+    min-height: 150px;
+    text-align: center;
+    padding: 40px;
 }
 
 header h1 {
     color: white;
-    font-family: var(--fonte-destaque);
+    font: normal normal 3em var(--fonte-destaque);
+    text-shadow: 2px 2px 0px black;
+    padding: 10px;
+
 }
 
 header>p {
+
     color: white;
+    font: normal normal 1.2em var(--fonte-padrao);
+    text-shadow: 2px 2px 0px black;
+    padding: 10px;
+    max-width: 600px;
+    margin: auto;
 }
+
 
 nav {
     background-color: var(--cor5);
+    padding: 10px;
+    box-shadow: 0px 7px 9px black;
 }
 
-/*nav>a{
-    color:white;
-}*/
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    transition-duration: .7s;
+
+}
+
+nav a:hover {
+    background-color: #3ddc54;
+    border-radius: 5px;
+
+
+
+}
 
 main {
     min-width: 300px;
@@ -74,14 +101,38 @@ main h1 {
 }
 
 main h2 {
+    background-image: linear-gradient(to right, var(--cor2), transparent);
+    padding:4px 0px 4px 8px;
     color: var(--cor4);
     font-family: var(--fonte-android);
+    font-size: 1.3em;
+    text-shadow: 1px 0px 1px #00000087;
 }
 
 main p {
-    margin: 8px;
+    margin: 15px 8px;
     text-align: justify;
     text-indent: 20pt;
+    font-size: 1em;
+    line-height: 2em;
+}
+
+main strong{
+    color: var(--cor3);
+    font-weight: bolder;
+}
+
+main a {
+    color: white;
+    background-color: var(--cor4);
+    padding: 2px 4px;
+    border-radius: 3px;
+    text-decoration: none;
+}
+
+main a:hover{
+    background-color: var(--cor3);
+    text-decoration: underline;
 }
 
 main img {
@@ -89,7 +140,7 @@ main img {
 }
 
 main img.pequena {
-    width: 50%;
+   max-width: 350px;
     display: block;
     margin: auto;
 }
@@ -101,5 +152,17 @@ main iframe {
 
 footer {
     background-color: var(--cor5);
+    
+    padding: 10px;
+    
+}
+footer>p{
     color: white;
+    text-align: center;
+}
+
+footer a {
+    color: var(--cor2);
+    text-decoration: none;
+
 }
